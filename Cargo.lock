@@ -1179,9 +1179,8 @@ checksum = "b94f61472cee1439c0b966b47e3aca9ae07e45d070759512cd390ea2bebc6675"
 
 [[package]]
 name = "coalesced_map"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "75f51db9b94d9ca1f2075d1d1ea620ab431f90017a01955becb281e3ae4603a7"
+version = "0.1.2"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "dashmap",
  "tokio",
@@ -1946,6 +1945,18 @@ name = "file_url"
 version = "0.2.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "765662dc0b26e038099a5a1529f5d48443111eea45377c312be892997651710e"
+dependencies = [
+ "itertools 0.14.0",
+ "percent-encoding",
+ "thiserror 2.0.16",
+ "typed-path",
+ "url",
+]
+
+[[package]]
+name = "file_url"
+version = "0.2.6"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "itertools 0.14.0",
  "percent-encoding",
@@ -3762,8 +3773,7 @@ checksum = "57c0d7b74b563b49d38dae00a0c37d4d6de9b432382b2892f0574ddcae73fd0a"
 [[package]]
 name = "path_resolver"
 version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "493dd224adc6163e40a1e58cefbeec27dabb69696017677406417b3516c800fa"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "fs-err",
  "fxhash",
@@ -4253,9 +4263,8 @@ dependencies = [
 
 [[package]]
 name = "rattler"
-version = "0.36.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8ea03597a7d50d2d8afcda6f98a1ab3284b3064618298e914d1b0e06fc63cefb"
+version = "0.37.3"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "anyhow",
  "clap",
@@ -4274,11 +4283,11 @@ dependencies = [
  "parking_lot 0.12.4",
  "path_resolver",
  "rattler_cache",
- "rattler_conda_types",
- "rattler_digest",
+ "rattler_conda_types 0.39.2",
+ "rattler_digest 1.1.5 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
  "rattler_menuinst",
- "rattler_networking",
- "rattler_package_streaming",
+ "rattler_networking 0.25.13",
+ "rattler_package_streaming 0.23.4",
  "rattler_shell",
  "rayon",
  "reflink-copy",
@@ -4286,7 +4295,7 @@ dependencies = [
  "reqwest",
  "reqwest-middleware",
  "serde_json",
- "simple_spawn_blocking",
+ "simple_spawn_blocking 1.1.0 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
  "smallvec",
  "tempfile",
  "thiserror 2.0.16",
@@ -4346,14 +4355,14 @@ dependencies = [
  "ratatui",
  "rattler",
  "rattler_cache",
- "rattler_conda_types",
+ "rattler_conda_types 0.39.2",
  "rattler_config",
- "rattler_digest",
+ "rattler_digest 1.1.5 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
  "rattler_index",
  "rattler_menuinst",
- "rattler_networking",
- "rattler_package_streaming",
- "rattler_redaction",
+ "rattler_networking 0.25.13",
+ "rattler_package_streaming 0.23.4",
+ "rattler_redaction 0.1.12 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
  "rattler_repodata_gateway",
  "rattler_sandbox",
  "rattler_shell",
@@ -4405,9 +4414,8 @@ dependencies = [
 
 [[package]]
 name = "rattler_cache"
-version = "0.3.32"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "19e381b75c2a3e3b01cbc12acdd67472c4eec0369e4383c7a6f023842827c929"
+version = "0.3.34"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "anyhow",
  "dashmap",
@@ -4419,16 +4427,16 @@ dependencies = [
  "fxhash",
  "itertools 0.14.0",
  "parking_lot 0.12.4",
- "rattler_conda_types",
- "rattler_digest",
- "rattler_networking",
- "rattler_package_streaming",
- "rattler_redaction",
+ "rattler_conda_types 0.39.2",
+ "rattler_digest 1.1.5 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
+ "rattler_networking 0.25.13",
+ "rattler_package_streaming 0.23.4",
+ "rattler_redaction 0.1.12 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
  "rayon",
  "reqwest",
  "reqwest-middleware",
  "serde_json",
- "simple_spawn_blocking",
+ "simple_spawn_blocking 1.1.0 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
  "tempfile",
  "thiserror 2.0.16",
  "tokio",
@@ -4445,7 +4453,7 @@ dependencies = [
  "chrono",
  "core-foundation 0.10.1",
  "dirs",
- "file_url",
+ "file_url 0.2.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "fs-err",
  "fxhash",
  "glob",
@@ -4456,9 +4464,48 @@ dependencies = [
  "nom 8.0.0",
  "nom-language",
  "purl",
- "rattler_digest",
- "rattler_macros",
- "rattler_redaction",
+ "rattler_digest 1.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rattler_macros 1.0.11 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rattler_redaction 0.1.12 (registry+https://github.com/rust-lang/crates.io-index)",
+ "regex",
+ "serde",
+ "serde-untagged",
+ "serde_json",
+ "serde_repr",
+ "serde_with",
+ "serde_yaml",
+ "simd-json",
+ "smallvec",
+ "strum 0.27.2",
+ "tempfile",
+ "thiserror 2.0.16",
+ "tracing",
+ "typed-path",
+ "url",
+]
+
+[[package]]
+name = "rattler_conda_types"
+version = "0.39.2"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
+dependencies = [
+ "chrono",
+ "core-foundation 0.10.1",
+ "dirs",
+ "file_url 0.2.6 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
+ "fs-err",
+ "fxhash",
+ "glob",
+ "hex",
+ "indexmap 2.11.0",
+ "itertools 0.14.0",
+ "lazy-regex",
+ "nom 8.0.0",
+ "nom-language",
+ "purl",
+ "rattler_digest 1.1.5 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
+ "rattler_macros 1.0.11 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
+ "rattler_redaction 0.1.12 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
  "rayon",
  "regex",
  "serde",
@@ -4479,14 +4526,13 @@ dependencies = [
 
 [[package]]
 name = "rattler_config"
-version = "0.2.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "86b2088726870534e9f04c46918ff7f38ed61b9ad7dc7d3afd238ea1c81a5070"
+version = "0.2.9"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "console 0.16.0",
  "fs-err",
  "indexmap 2.11.0",
- "rattler_conda_types",
+ "rattler_conda_types 0.39.2",
  "serde",
  "serde_json",
  "thiserror 2.0.16",
@@ -4509,15 +4555,30 @@ dependencies = [
  "serde",
  "serde_with",
  "sha2",
+ "url",
+]
+
+[[package]]
+name = "rattler_digest"
+version = "1.1.5"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
+dependencies = [
+ "blake2",
+ "digest",
+ "generic-array",
+ "hex",
+ "md-5",
+ "serde",
+ "serde_with",
+ "sha2",
  "tokio",
  "url",
 ]
 
 [[package]]
 name = "rattler_index"
-version = "0.24.12"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "129b0e5e17cdeeeb355ed35f400c2e81c09fa4d6b67ac28266036fe6242abba0"
+version = "0.25.1"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "anyhow",
  "bytes",
@@ -4530,10 +4591,11 @@ dependencies = [
  "fxhash",
  "indicatif",
  "opendal",
- "rattler_conda_types",
- "rattler_digest",
- "rattler_networking",
- "rattler_package_streaming",
+ "rattler_conda_types 0.39.2",
+ "rattler_digest 1.1.5 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
+ "rattler_networking 0.25.13",
+ "rattler_package_streaming 0.23.4",
+ "rattler_s3",
  "reqwest",
  "rmp-serde",
  "serde",
@@ -4558,10 +4620,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "rattler_macros"
+version = "1.0.11"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
+dependencies = [
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "rattler_menuinst"
-version = "0.2.24"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5c9b97d9033f8c61bc2458f6afafe3874ac02ef1167ab2c786b0800644378615"
+version = "0.2.26"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "chrono",
  "configparser",
@@ -4571,7 +4641,7 @@ dependencies = [
  "once_cell",
  "plist",
  "quick-xml 0.37.5",
- "rattler_conda_types",
+ "rattler_conda_types 0.39.2",
  "rattler_shell",
  "regex",
  "serde",
@@ -4594,6 +4664,30 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c0e2647706ecaf8f6a27ce1d3faaf44ae0f5ec713c1298ee874d77b8488a1122"
 dependencies = [
  "anyhow",
+ "async-trait",
+ "base64 0.22.1",
+ "fs-err",
+ "getrandom 0.3.3",
+ "http 1.3.1",
+ "itertools 0.14.0",
+ "reqwest",
+ "reqwest-middleware",
+ "retry-policies 0.4.0",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "thiserror 2.0.16",
+ "tracing",
+ "url",
+]
+
+[[package]]
+name = "rattler_networking"
+version = "0.25.13"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
+dependencies = [
+ "anyhow",
+ "async-once-cell",
  "async-trait",
  "aws-config",
  "aws-sdk-s3",
@@ -4628,14 +4722,41 @@ dependencies = [
  "fs-err",
  "futures-util",
  "num_cpus",
- "rattler_conda_types",
- "rattler_digest",
- "rattler_networking",
- "rattler_redaction",
+ "rattler_conda_types 0.39.1",
+ "rattler_digest 1.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rattler_networking 0.25.11",
+ "rattler_redaction 0.1.12 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde_json",
+ "simple_spawn_blocking 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tar",
+ "tempfile",
+ "thiserror 2.0.16",
+ "tokio",
+ "tokio-util",
+ "tracing",
+ "url",
+ "zip 3.0.0",
+ "zstd",
+]
+
+[[package]]
+name = "rattler_package_streaming"
+version = "0.23.4"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
+dependencies = [
+ "bzip2",
+ "chrono",
+ "fs-err",
+ "futures-util",
+ "num_cpus",
+ "rattler_conda_types 0.39.2",
+ "rattler_digest 1.1.5 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
+ "rattler_networking 0.25.13",
+ "rattler_redaction 0.1.12 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
  "reqwest",
  "reqwest-middleware",
  "serde_json",
- "simple_spawn_blocking",
+ "simple_spawn_blocking 1.1.0 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
  "tar",
  "tempfile",
  "thiserror 2.0.16",
@@ -4650,8 +4771,7 @@ dependencies = [
 [[package]]
 name = "rattler_pty"
 version = "0.2.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "76a7edbf8f23a099ccb32cc4f024886e35a873c462ca83f86c286556c275bf06"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "libc",
  "nix 0.30.1",
@@ -4670,10 +4790,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "rattler_redaction"
+version = "0.1.12"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
+dependencies = [
+ "reqwest",
+ "reqwest-middleware",
+ "url",
+]
+
+[[package]]
 name = "rattler_repodata_gateway"
-version = "0.24.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "134f2f4a1dfc6d45ca5f09afb27070ab27e930bcd9bacb4e3c592fefed22fb1b"
+version = "0.24.4"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "anyhow",
  "async-compression",
@@ -4687,7 +4816,7 @@ dependencies = [
  "coalesced_map",
  "dashmap",
  "dirs",
- "file_url",
+ "file_url 0.2.6 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
  "fs-err",
  "futures",
  "hex",
@@ -4702,11 +4831,11 @@ dependencies = [
  "parking_lot 0.12.4",
  "pin-project-lite",
  "rattler_cache",
- "rattler_conda_types",
- "rattler_digest",
- "rattler_networking",
- "rattler_package_streaming",
- "rattler_redaction",
+ "rattler_conda_types 0.39.2",
+ "rattler_digest 1.1.5 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
+ "rattler_networking 0.25.13",
+ "rattler_package_streaming 0.23.4",
+ "rattler_redaction 0.1.12 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
  "reqwest",
  "reqwest-middleware",
  "retry-policies 0.4.0",
@@ -4715,7 +4844,7 @@ dependencies = [
  "serde",
  "serde_json",
  "serde_with",
- "simple_spawn_blocking",
+ "simple_spawn_blocking 1.1.0 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
  "strum 0.27.2",
  "superslice",
  "tempfile",
@@ -4730,10 +4859,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "rattler_s3"
+version = "0.1.2"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
+dependencies = [
+ "aws-config",
+ "aws-credential-types",
+ "aws-sdk-s3",
+ "clap",
+ "rattler_networking 0.25.13",
+ "thiserror 2.0.16",
+ "tracing",
+ "url",
+]
+
+[[package]]
 name = "rattler_sandbox"
-version = "0.1.10"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bb8fabaf100a9cfab4d8b5e42bbf690596d225eb840f1c8552192a10e6c90ee7"
+version = "0.1.11"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "birdcage",
  "clap",
@@ -4743,16 +4886,15 @@ dependencies = [
 
 [[package]]
 name = "rattler_shell"
-version = "0.24.10"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3129f7f87c873168ff981e5182e8c08a5ba7e47c0a2939ca078c919b31e93034"
+version = "0.25.0"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "anyhow",
  "enum_dispatch",
  "fs-err",
  "indexmap 2.11.0",
  "itertools 0.14.0",
- "rattler_conda_types",
+ "rattler_conda_types 0.39.2",
  "rattler_pty",
  "serde_json",
  "shlex",
@@ -4764,15 +4906,14 @@ dependencies = [
 
 [[package]]
 name = "rattler_solve"
-version = "3.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "325f2531cf5370dee31d20eaa7eba56766b9dc66442f8c2f4585979b44268311"
+version = "3.0.3"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "chrono",
  "futures",
  "itertools 0.14.0",
- "rattler_conda_types",
- "rattler_digest",
+ "rattler_conda_types 0.39.2",
+ "rattler_digest 1.1.5 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
  "resolvo",
  "serde",
  "tempfile",
@@ -4782,9 +4923,8 @@ dependencies = [
 
 [[package]]
 name = "rattler_upload"
-version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "abfcc7d3eb72579f891a70a2bd5aeb11ac626bca373598f3ffccecee1299e6bc"
+version = "0.3.1"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "base64 0.22.1",
  "clap",
@@ -4793,13 +4933,15 @@ dependencies = [
  "indicatif",
  "miette",
  "opendal",
- "rattler_conda_types",
+ "rattler_conda_types 0.39.2",
  "rattler_config",
- "rattler_digest",
- "rattler_networking",
- "rattler_package_streaming",
- "rattler_redaction",
+ "rattler_digest 1.1.5 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
+ "rattler_networking 0.25.13",
+ "rattler_package_streaming 0.23.4",
+ "rattler_redaction 0.1.12 (git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url)",
+ "rattler_s3",
  "rattler_solve",
+ "regex",
  "reqwest",
  "reqwest-middleware",
  "reqwest-retry",
@@ -4817,16 +4959,15 @@ dependencies = [
 
 [[package]]
 name = "rattler_virtual_packages"
-version = "2.1.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "83025dab2cf654df31766801fb55be564e14ebdb4de60c27ace1a1820befcb3c"
+version = "2.1.5"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "archspec",
  "libloading",
  "nom 8.0.0",
  "once_cell",
  "plist",
- "rattler_conda_types",
+ "rattler_conda_types 0.39.2",
  "regex",
  "serde",
  "thiserror 2.0.16",
@@ -5210,7 +5351,7 @@ dependencies = [
  "duct",
  "fs-err",
  "glob",
- "rattler_package_streaming",
+ "rattler_package_streaming 0.23.2",
  "serde_json",
  "sha1",
 ]
@@ -5883,6 +6024,14 @@ name = "simple_spawn_blocking"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "55c0b0b683828aa9d4f5c0e59b0c856a12c30a65b5f1ca4292664734d76fa9c2"
+dependencies = [
+ "tokio",
+]
+
+[[package]]
+name = "simple_spawn_blocking"
+version = "1.1.0"
+source = "git+https://github.com/magentaqin/rattler.git?branch=feature%2Fupload-url#3ae4aefc0911d8d4dbcc943fb423a5b8a0f955a1"
 dependencies = [
  "tokio",
 ]
